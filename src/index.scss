@@ -53,25 +53,24 @@ body {
 
 
 .container2{
+  display: flex;
+  place-content: space-between;
   width: 90%;
   position: fixed;
   bottom: 15px;
   border-radius: 6px;
   background-color: #CED4D9;
   height: 60px;
-
-  #inputspace{
-    display: flex;
-    padding-right: 10px;
-    img{
-      margin: 5px;
-      margin-left: 15px;
-    }
-  
-    #input{
-      font-size: 17px;
-    } 
-  };
+  img{
+    margin: 20px;
+  }
+  input{
+    float: right;
+    width: 60%;
+    font-size: 19px;
+    border: none;
+    background-color: transparent
+  }
   .addings_btn{
     display: flex;
     justify-content: center;

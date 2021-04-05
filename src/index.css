@@ -51,6 +51,10 @@ body {
 }
 
 .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
   width: 90%;
   position: fixed;
   bottom: 15px;
@@ -59,20 +63,16 @@ body {
   height: 60px;
 }
 
-.container2 #inputspace {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 10px;
+.container2 img {
+  margin: 20px;
 }
 
-.container2 #inputspace img {
-  margin: 5px;
-  margin-left: 15px;
-}
-
-.container2 #inputspace #input {
-  font-size: 17px;
+.container2 input {
+  float: right;
+  width: 60%;
+  font-size: 19px;
+  border: none;
+  background-color: transparent;
 }
 
 .container2 .addings_btn {
