@@ -12,6 +12,8 @@ body {
   height: 485px;
 }
 
+
+
 .container{
   #heading{
     font-size: 44px;
@@ -23,6 +25,12 @@ body {
   }
 }
 .toggle_greetings{
+  display:none;
+  #Hello{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+  }
   #greetings{
     line-height: 1.2em;
     margin-top: 0px;
@@ -33,44 +41,69 @@ body {
 }
 
 
-.container1{
-  
-  // display: none;
-  position: fixed;
-  bottom: 70px;
-
-  #count_completed{
-    display:flex;
-    padding-right: 10px;
+.task_list{
+  .task_item{
+    height:60px;
     border-radius: 6px;
-    background-color: #CED4D9;
+    background-color: #fff;
+    display: flex;
+    
+    place-content: space-between;
     img{
-      margin: 5px;
-      margin-left: 15px;
+      cursor: pointer;
+      margin: 12px;
+    }
+    .task_text{
+      padding-top:12px;
+      font-size: 24px;
+      margin-left: 10px;
+      width: 100%;
+    }
+    .button_{
+      display: flex;
     }
   }
 }
+
+.complete_container{
+  cursor: pointer;
+  background-color: #CED4D9;
+  border-radius: 6px;
+  display: flex;
+  #count_completed{
+    margin-left: 10px;
+  }
+}
+  
+
 
 
 .container2{
   display: flex;
   place-content: space-between;
-  width: 90%;
-  position: fixed;
-  bottom: 15px;
   border-radius: 6px;
   background-color: #CED4D9;
   height: 60px;
-  img{
+  #plus{
+    cursor: pointer;
     margin: 20px;
   }
-  input{
-    float: right;
-    width: 60%;
-    font-size: 19px;
-    border: none;
-    background-color: transparent
+  .input_{
+    padding-top:12px;
+    vertical-align: middle;
+    width: 100%;
+    textarea{
+      font: inherit;
+      resize: none;
+      white-space: nowrap;
+      overflow-x: scroll;
+      width:100%;
+      font-size: 24px;
+      border: none;
+      background-color: transparent
+    }
   }
+  
   .addings_btn{
     display: flex;
     justify-content: center;

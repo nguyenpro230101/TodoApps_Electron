@@ -23,6 +23,20 @@ body {
   color: var(--text-dim);
 }
 
+.toggle_greetings {
+  display: none;
+}
+
+.toggle_greetings #Hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 80px;
+}
+
 .toggle_greetings #greetings {
   line-height: 1.2em;
   margin-top: 0px;
@@ -31,23 +45,45 @@ body {
   text-align: center;
 }
 
-.container1 {
-  position: fixed;
-  bottom: 70px;
-}
-
-.container1 #count_completed {
+.task_list .task_item {
+  height: 60px;
+  border-radius: 6px;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 10px;
-  border-radius: 6px;
-  background-color: #CED4D9;
+  place-content: space-between;
 }
 
-.container1 #count_completed img {
-  margin: 5px;
-  margin-left: 15px;
+.task_list .task_item img {
+  cursor: pointer;
+  margin: 12px;
+}
+
+.task_list .task_item .task_text {
+  padding-top: 12px;
+  font-size: 24px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.task_list .task_item .button_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.complete_container {
+  cursor: pointer;
+  background-color: #CED4D9;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.complete_container #count_completed {
+  margin-left: 10px;
 }
 
 .container2 {
@@ -55,22 +91,29 @@ body {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  width: 90%;
-  position: fixed;
-  bottom: 15px;
   border-radius: 6px;
   background-color: #CED4D9;
   height: 60px;
 }
 
-.container2 img {
+.container2 #plus {
+  cursor: pointer;
   margin: 20px;
 }
 
-.container2 input {
-  float: right;
-  width: 60%;
-  font-size: 19px;
+.container2 .input_ {
+  padding-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container2 .input_ textarea {
+  font: inherit;
+  resize: none;
+  white-space: nowrap;
+  overflow-x: scroll;
+  width: 100%;
+  font-size: 24px;
   border: none;
   background-color: transparent;
 }

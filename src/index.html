@@ -2,35 +2,39 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>ToDoApp</title>
     <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <h1 id="heading">Today's Goal 📌</h1>
       <p id="today_date">Monday, 5th April</p>
     </div>
-
+    
     <div class="toggle_greetings">
+      <div id="Hello">👋🏻</div>
       <p id="greetings">Hello there, Let’s set things up for a productive day !!!</p>
     </div>
-    <div class="container1">
-      <ul id="task_list"></ul>
-      <div id = "count_completed">
-        <img id='closed' src="..\assets\images\iconmonstr-arrow-37.svg" alt="right">
-        <p id="num_completed">Completed </p>
+      <div class="task_list" id="task_list"></div>
       </div>
-      <ul id="completed_task_list"></ul>
-    </div>
+      <div class="complete_container">
+        <img id='closed' src="..\assets\images\iconmonstr-arrow-37.svg" alt="right">
+        <div id = "count_completed">
+          Completed
+        </div>
+        <ul id="completed_task_list"></ul>
+      </div>
+      
+      
     
-
-
     <div class="container2">
       <div>
         <img id="plus" src="..\assets\images\iconmonstr-plus-2.svg" alt="plus">
-        
       </div>
-      <input type="text"  placeholder="Add a Task">
+      <div class = "input_">
+        <textarea rows="1" style="overflow:hidden"></textarea>
+      </div>
       
       <div class="addings_btn">
         <img id="repeat" src="..\assets\images\iconmonstr-synchronization-3.svg" alt="daily">
